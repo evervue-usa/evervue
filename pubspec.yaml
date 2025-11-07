@@ -1,0 +1,249 @@
+name: evervue
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  url_launcher: ^6.3.2
+  carousel_slider: ^5.0.0
+  video_player: ^2.9.2
+  flutter_staggered_grid_view: ^0.7.0
+  iconify_flutter: ^0.0.7
+  iconsax: ^0.0.8
+  ionicons: ^0.2.2
+  smooth_page_indicator: ^1.2.1
+  syncfusion_flutter_pdfviewer: ^31.1.19
+  syncfusion_flutter_core: ^31.1.19
+  shared_preferences: ^2.5.3
+  cached_network_image: ^3.4.1
+  typewritertext: ^3.0.9
+  rename: ^3.1.0
+  permission_handler: ^12.0.1
+  share_plus: ^12.0.0
+  new_version_plus: ^0.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/appicon.png"
+  min_sdk_android: 24
+  remove_alpha_ios: true
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icons/appicon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/specification/
+    - assets/specification/mirrorvue-mirror-tv-specification-table.pdf
+    - assets/images/
+    - assets/images/banner/
+    - assets/images/banner/grand-mirrors-banner.mp4
+    - assets/images/banner/mirrorvue-banner.mp4
+    - assets/images/banner/decovue-banner.mp4
+    - assets/images/banner/cosmos-outdoor-banner.mp4
+    - assets/images/banner/cosmos-marine-banner.mp4
+    - assets/images/banner/cabitv-banner.mp4
+    - assets/decovue/
+    - assets/decovue/resources/
+    - assets/decovue/resources/highlights/
+    - assets/decovue/resources/highlights/smart-mirror-framed-tv.mp4
+    - assets/decovue/resources/highlights/framed-tv-vauci-mirror.mp4
+    - assets/decovue/resources/highlights/cool-smart-framed-mirror-tv.mp4
+    - assets/decovue/resources/highlights/glass-mirror-tv.mp4
+    - assets/decovue/resources/highlights/frameless-desk-stand-mirror-design.mp4
+    - assets/decovue/resources/highlights/wall-mounted-smart-mirror-tv.mp4
+    - assets/decovue/resources/highlights/frameless-smart-mirror-tv-design.mp4
+    - assets/decovue/resources/highlights/wall-mount-frameless-smart-tv.mp4
+    - assets/decovue/resources/highlights/wall-mount-solution.mp4
+    - assets/decovue/resources/highlights/flat-wall-mount-solution.mp4
+    - assets/decovue/resources/highlights/modern-mirror-tv-power-cable.mp4
+    - assets/spectrum/resources/banner/
+    - assets/spectrum/resources/section1/
+    - assets/spectrum/resources/section1/captivating-images-preview-in-spectrum.mp4
+    - assets/spectrum/resources/section1/painting-gallery-displayed-in-television.mp4
+    - assets/spectrum/resources/section1/spectrum-high-definition-display.mp4
+    - assets/spectrum/resources/section2/
+    - assets/spectrum/resources/section3/
+    - assets/spectrum/resources/section4/
+    - assets/spectrum/resources/banner/spectrum-banner.mp4
+    - assets/cabitv/resources/home/
+    - assets/cabitv/resources/home/kitchen-tv-under-cabinet-pan-motion-video.mp4
+    - assets/cabitv/resources/home//easy-to-install-kitchen-television.mp4
+    - assets/cabitv/resources/home/under-cabinet-kitchen-smart-tv.mp4
+    - assets/cabitv/resources/home/under-cabinet-kitchen-tv.mp4
+    - assets/cabitv/resources/home/smart-cabinet-tv-setup.mp4
+    - assets/cabitv/resources/home/kitchen-cabinet-door-tv.mp4
+    - assets/cabitv/resources/home/easy-to-install-smart-kitchen-tv.mp4
+    - assets/cinema/resources/section1/
+    - assets/cinema/resources/section1/cinema-tv-shows-vibrant-display.mp4
+    - assets/cinema/resources/section1/vivid-display-experience-using-cinema.mp4
+    - assets/cinema/resources/section1/cinema-vast-high-definition-tv.mp4
+    - assets/cinema/resources/section2/
+    - assets/cinema/resources/section2/double-round-pole-cinema.mp4
+    - assets/cinema/resources/section2/single-oval-pole-cinema-tv.mp4
+    - assets/cinema/resources/section3/
+    - assets/cinema/resources/section3/cinema-smart-wall-mount.mp4
+    - assets/cinema/resources/section3/cinema-stainless-steel-mount.mp4
+    - assets/cinema/resources/section3/cinema-wall-mount.mp4
+    - assets/cinema/resources/section4/
+    - assets/cinema/resources/section4/cinema-stainless-steel-finish.mp4
+    - assets/cinema/resources/section5/
+    - assets/cinema/resources/section5/cable-free-cinema-tv.mp4
+    - assets/cinema/resources/section5/cinema-cable-free-design.mp4
+    - assets/cinema/resources/section5/cinema-tv-double-round-pole-specifications.mp4
+    - assets/cinema/resources/section5/cinema-tv-single-oval-pole-specifications.mp4
+    - assets/qaio/resources/home/
+    - assets/qaio/resources/home/mirror/
+    - assets/qaio/resources/home/mirror/custom-smart-tv-mirror-drawing.mp4
+    - assets/qaio/resources/home/mirror/alexa-voice-assistant-smart-mirror.mp4
+    - assets/qaio/resources/home/mirror/true-light-remote-control-smart-tv.mp4
+    - assets/qaio/resources/home/mirror/smart-mirror-technology-touchless-light-sensor.mp4
+    - assets/qaio/resources/home/flex/
+    - assets/qaio/resources/home/flex/qaio-fitness-mirror-video.mp4
+    - assets/qaio/resources/home/custom/
+    - assets/qaio/resources/home/custom/qaio-custom.mp4
+    - assets/qaio/resources/home/custom/custom-mirror-tv-size-and-location.mp4
+    - assets/qaio/resources/home/custom/double-sink-mirror-with-led-lights.mp4
+    - assets/cosmos/
+    - assets/cosmos/resources/
+    - assets/cosmos/resources/home/
+    - assets/cosmos/resources/home/cosmos-outdoor-tv-by-evervue.mp4
+    - assets/cosmos/resources/home/cosmos-weather-resistant-smart-outdoor-tv.mp4
+    - assets/cosmos/resources/home/stainless_steel/
+    - assets/cosmos/resources/marine/
+    - assets/cosmos/resources/marine/brightness-sensor-cosmos-marine-outdoor-tv.mp4
+    - assets/cosmos/resources/marine/light-sensor-cosmos-marine-outdoor-tv.mp4
+    - assets/cosmos/resources/marine/outdoor-tv-with-bose-outdoor-speaker.mp4
+    - assets/cosmos/resources/technology/
+    - assets/cosmos/resources/technology/heating-and-cooling-system.mp4
+    - assets/cosmos/resources/technology/exterior-tv-with-protective-cap.mp4
+    - assets/cosmos/resources/technology/all-weather-resist-outdoor-tv-withstand.mp4
+    - assets/cosmos/resources/technology/sound-streamer-for-quality-audio.mp4
+    - assets/cosmos/resources/home/cylinder-speaker-outdoor-tv.mp4
+    - assets/cosmos/resources/home/powerful-modern-speaker-mobile.mp4
+    - assets/cosmos/resources/home/convertible-swivel-mount-outdoor-tv.mp4
+    - assets/oceatv/resources/home/
+    - assets/oceatv/resources/home/Bathroom-television-bracket.mp4
+    - assets/oceatv/resources/home/Bracket-video-system.mp4
+    - assets/oceatv/resources/home/Drill-free-mount-television.mp4
+    - assets/oceatv/resources/home/Television-in-one-bathroom.mp4
+    - assets/oceatv/resources/home/Google-assist-voice-control.mp4
+    - assets/oceatv/resources/home/bathroom-remote-control.mp4
+    - assets/oceatv/resources/home/Made-to-be-wet-free.mp4
+    - assets/oceatv/resources/home/bathroom-tv-antenna.mp4
+    - assets/oceatv/resources/home/bathroom-tv-television-banner.mp4
+    - assets/oceatv/resources/home//bathroom-tv-recessed.mp4
+    - assets/oceatv/resources/home/World-first-class-television.mp4
+    - assets/oceatv/resources/home/sophisticated-ocea-style-bathroom-tv.mp4
+    - assets/oceatv/resources/home/shower-room-with-ocea-style-tv.mp4
+    - assets/oceatv/resources/home/zepp-remote-pro-bathroom-tv.mp4
+    - assets/oceatv/resources/home/ocea-style-bath-wall-tv-mirror.mp4
+    - assets/oceatv/resources/home/smart-television-ocea-style-for-shower-room.mp4
+    - assets/oceatv/resources/home/ocea-style-tv-wall-mount-bathroom.mp4
+    - assets/oceatv/resources/home/luxury-bathroom-tv-flat-screen-wall.mp4
+    - assets/oceatv/resources/technology/
+    - assets/oceatv/resources/technology/bathroom-tv-fan.mp4
+    - assets/oceatv/resources/technology/external-speaker.mp4
+    - assets/oceatv/resources/technology/fog-free-bathroom-tv.mp4
+    - assets/mirrorvue/resources/highlights/
+    - assets/mirrorvue/resources/highlights/Vanishing-custom-TV-Mirror.mp4
+    - assets/mirrorvue/resources/highlights/mirrorvue-vanishing-tv-mirror-size-options-for-mobile.mp4
+    - assets/mirrorvue/resources/highlights/best-silver-glass-custom-Mirror-TV.mp4
+    - assets/mirrorvue/resources/highlights/tinted-custom-glass-4k-Mirror-TV.mp4
+    - assets/mirrorvue/resources/highlights/black-glass-best-custom-Mirror-TV.mp4
+    - assets/mirrorvue/resources/highlights/bronze-glass-OLED-custom-TV.mp4
+    - assets/mirrorvue/resources/highlights/gold-OLED-custom-TV-Mirror.mp4
+    - assets/mirrorvue/resources/highlights/rose-gold-glass-custom-Mirror-TV.mp4
+    - assets/mirrorvue/resources/highlights/mirrorvue-custom-mirror-tv-mobile.mp4
+    - assets/mirrorvue/resources/highlights/custom-mirror-TV-location.mp4
+    - assets/mirrorvue/resources/highlights/custom-Mirror-TV-wall-mount.mp4
+    - assets/mirrorvue/resources/highlights/custom-Mirror-magnet-mount.mp4
+    - assets/mirrorvue/resources/highlights/MirrorVue-OLED-TV-recessed-mount.mp4
+    - assets/mirrorvue/resources/highlights/Mirrorvue-Technology-Banner-768.mp4
+    - assets/mirrorvue/resources/highlights/MirrorVue-Model-A-True-Light.mp4
+    - assets/mirrorvue/resources/highlights/MirrorVue-Model-B-True-Light.mp4
+    - assets/mirrorvue/resources/highlights/MirrorVue-Model-C-True-Light.mp4
+    - assets/mirrorvue/resources/highlights/MirrorVue-Model-D-True-Light.mp4
+    - assets/mirrorvue/resources/highlights/MirrorVue-Model-E-True-Light.mp4
+    - assets/mirrorvue/resources/technology/mirrorvue-technology-custom-smart-tv-mirror.mp4
+    - assets/images/
+    - assets/mirrorvue/resources/why_mv/
+    - assets/mirrorvue/resources/why_mv/good-wall-mount.mp4
+    - assets/mirrorvue/resources/why_mv/made-to-measure.mp4
+    - assets/mirrorvue/resources/why_mv/real-mirror-tv-glass.mp4
+    - assets/mirrorvue/resources/why_mv/security-film.mp4
+    - assets/mirrorvue/resources/why_mv/tv-sizes-15.6-up-to-100.mp4
+    - assets/grandmirrors/
+    - assets/grandmirrors/output-whygm-compare/
+    - assets/grandmirrors/output-whygm-compare/whygm-com-02.mp4
+    - assets/grandmirrors/output-whygm-compare/whygm-com-05.mp4
+    - assets/grandmirrors/output-whygm-compare/whygm-com-06.mp4
+    - assets/grandmirrors/videos/
+    - assets/grandmirrors/images/
+    - assets/grandmirrors/images/product/
+    - assets/grandmirrors/images/product/logo/
+    - assets/grandmirrors/images/product/aura/
+    - assets/grandmirrors/images/product/baroque/
+    - assets/grandmirrors/images/product/hollywood/
+    - assets/grandmirrors/images/product/cabinet/
+    - assets/grandmirrors/images/product/lux/
+    - assets/grandmirrors/images/product/lumiere/
+    - assets/grandmirrors/images/product/eclipse/
+    - assets/grandmirrors/images/product/ambiance/
+    - assets/grandmirrors/images/product/allure/
+    - assets/grandmirrors/images/product/etch/
+    - assets/grandmirrors/images/product/deco/
+    - assets/grandmirrors/images/product/mosaic/
+    - assets/grandmirrors/images/product/mediterranean/
+    - assets/grandmirrors/images/product/professional/
+    - assets/grandmirrors/images/others/addons/
+    - assets/icons/
+    - assets/icons/gray/
+    - assets/frames/
+    - assets/frames/Design-Collection-Frames-Lamps-Bulbs.pdf
+    - assets/brochure/mirrorvue-product-brochure.pdf
+    - assets/brochure/Ocea-Pro-Smart-Touch-Brochure.pdf
+    - assets/brochure/Ocea-Style-Bathroom-TV-Brochure.pdf
+    - assets/brochure/cosmos-outdoor-tv-brochure.pdf
+    - assets/brochure/cosmos-marine-tv-brochure.pdf
+
+  fonts:
+    - family: Century Gothic
+      fonts:
+        - asset: assets/fonts/century-gothic.TTF
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/roboto.ttf
+    - family: Roboto-Bold
+      fonts:
+        - asset: assets/fonts/roboto-bold.ttf
